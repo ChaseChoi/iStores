@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wzK-SZ-Vrs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--管理员-->
+        <scene sceneID="jfa-Yk-kPZ">
+            <objects>
+                <viewController id="Ker-If-rmu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s6s-bn-iuf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hxu-bs-0a2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="管理员" image="icon-admin-off" selectedImage="icon-admin-on" id="n1C-vC-cKo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9EM-K7-HZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="341"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yat-we-2Ed">
+            <objects>
+                <viewController id="qdE-q2-P5n" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Vl-yS-tFP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FIj-Np-NY5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JvF-tG-uuz" firstAttribute="bottom" secondItem="FIj-Np-NY5" secondAttribute="bottom" id="cLJ-eO-Wji"/>
+                            <constraint firstItem="JvF-tG-uuz" firstAttribute="trailing" secondItem="FIj-Np-NY5" secondAttribute="trailing" id="fFZ-Ct-bPH"/>
+                            <constraint firstItem="FIj-Np-NY5" firstAttribute="leading" secondItem="JvF-tG-uuz" secondAttribute="leading" id="sQg-hR-A1I"/>
+                            <constraint firstItem="FIj-Np-NY5" firstAttribute="top" secondItem="JvF-tG-uuz" secondAttribute="top" id="veV-0k-2Xo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JvF-tG-uuz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fyB-cO-FPM">
+                        <barButtonItem key="rightBarButtonItem" image="icon-scan" id="B47-vt-7XJ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tjo-1F-bY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="1050"/>
+        </scene>
+        <!--用户-->
+        <scene sceneID="thP-g5-GYO">
+            <objects>
+                <viewController id="bpq-Fg-LZH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7K-Qc-6E4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IgR-Lz-IhK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="用户" image="icon-user-off" selectedImage="icon-user-on" id="bj5-3J-jTR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgX-3v-DFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="-389"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7HE-Iu-Ksn">
+            <objects>
+                <tabBarController id="wzK-SZ-Vrs" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="umD-5e-9aJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TKf-su-ZSo" kind="relationship" relationship="viewControllers" id="3Lq-mp-gzt"/>
+                        <segue destination="bpq-Fg-LZH" kind="relationship" relationship="viewControllers" id="fQ2-xl-abu"/>
+                        <segue destination="Ker-If-rmu" kind="relationship" relationship="viewControllers" id="UKS-Y1-oVg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paS-Qu-yCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-489" y="492"/>
+        </scene>
+        <!--销售-->
+        <scene sceneID="8Nh-nw-pnd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TKf-su-ZSo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="销售" image="icon-sales-off" selectedImage="icon-sales-on" id="7In-4M-0fH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UPa-3s-K8h">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qdE-q2-P5n" kind="relationship" relationship="rootViewController" id="5Qy-lm-Zls"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eC-a7-Ojs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.8" y="1050.6746626686659"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-admin-off" width="32" height="32"/>
+        <image name="icon-admin-on" width="32" height="32"/>
+        <image name="icon-sales-off" width="22" height="30"/>
+        <image name="icon-sales-on" width="22" height="30"/>
+        <image name="icon-scan" width="28" height="26"/>
+        <image name="icon-user-off" width="28" height="28"/>
+        <image name="icon-user-on" width="28" height="28"/>
+    </resources>
+</document>
